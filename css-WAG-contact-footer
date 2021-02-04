@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* empèche la box de grandir avec les paddings */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #003901;
+}
+
+.burger{
+    display: none;
+}
+
+h2{
+    font-weight: bold;
+    font-size: clamp(34px, 12vw, 90px);
+    line-height: 105px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #003901;
+}
+
+section{
+    margin-bottom: 70px;
+}
+
+hr{
+    width: 1440px;
+    height: 30px;
+    background: #3E6A42;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+/* Bordure pour vérifer blocs */
+/* section, footer{
+    border: 4px solid red;
+}
+
+div, nav, header, article, form{
+    border: 2px solid green;
+} */
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+    gap: 110px;
+}
+
+#WAG h2{
+    /* font-size: 90px; */
+    font-size: clamp(40px, 10vw, 90px);
+    width: 825px;
+    /* height: 282px; */
+    padding: 40px 20px 100px;
+}
+
+/* .WAGcontainer1{
+    background: url(images/icon-WAG-sectionpng.png) no-repeat right;
+} */
+
+#WAG p{
+    /* font-size: 21px; */
+    font-size: clamp(21px, 6vw, 18px);
+    line-height: 34px;
+    /* padding-top: 100px; */
+    padding-left: 20px;
+    padding-bottom: 0%;
+}
+
+.WAGcontainer2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.WAGcontainer2 span{
+    font-weight: bold;
+}
+
+.box1{
+    width: 374px;
+    /* height: 381px; */
+}
+
+.box2{
+    width: 374px;
+    height: 517px;
+}
+
+.box3{
+    width: 374px;
+    height: 442px;
+}
+
+/* GEEV */
+
+/* Back Market */
+
+/* Yuka */
+
+
+/* Contact */
+form{
+    margin: 50px 0 30px;
+    gap: 20px !important;
+    align-items: center;
+}
+ /* > * = tous les enfants directs */
+form > *{
+    width: min(600px, 95%);
+    height: 60px;
+    background: #DAEBC7;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(24px, 6vw, 18px);
+}
+
+#contact h2{
+    text-align: center;
+}
+
+textarea{
+    height: 188px;
+}
+
+/* bouton Envoyer */
+form > *:last-child{
+    width: 210px;
+    height: 56px;
+    background: #003901;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 47px;
+    font-size: clamp(24px, 6vw, 18px);
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/* Footer */
+#footer{
+    min-height: 257px;
+    background: url("images/fougèrefooter.png") no-repeat center / cover;
+    padding: 40px;
+}
+
+#footer p{
+    width: min(548px, 100%);
+    height: 28px;
+    font-size: clamp(21px, 6vw, 18px);
+    line-height: 28px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#footer .logo{
+    justify-content: flex-end;
+    align-items: top;
+    align-self: flex-end;
+}
+
+.social-media{
+    justify-content: space-between;
+    align-items: flex-end;
+}
